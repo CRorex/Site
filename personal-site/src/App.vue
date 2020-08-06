@@ -1,13 +1,15 @@
 <template>
   <div id="app">
     <h1 id="header">Christopher J. Rorex</h1>
-    <div class="contact">
-    </div>
+    <div class="contact"></div>
     <div class="sidenav">
-      <a href="https://www.linkedin.com/in/crorex/"> <img src="https://img.icons8.com/color/48/000000/linkedin.png"/>
+      <a href="https://www.linkedin.com/in/crorex/">
+        <img src="https://img.icons8.com/color/48/000000/linkedin.png" />
       </a>
       <router-link to="/">About</router-link>
+      <router-link to="/academics">Academics</router-link>
       <router-link to="/experience">Experience</router-link>
+      <router-link to="/projects">Projects</router-link>
     </div>
     <router-view />
   </div>
@@ -55,7 +57,8 @@
   margin-left: 255px;
 }
 
-.contact a:link, .contact a:visited {
+.contact a:link,
+.contact a:visited {
   background-color: blue;
   color: white;
   padding: 14px 25px;
